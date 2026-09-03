@@ -48,11 +48,10 @@ export default function MasonryGallery({ images }: MasonryGalleryProps) {
       id="gallery"
       className="mx-auto max-w-[2400px] px-4 py-8 sm:px-6 sm:py-10 lg:px-8"
     >
-      <motion.div layout className="masonry">
-        <AnimatePresence mode="popLayout">
+      <div className="masonry">
+        <AnimatePresence>
           {visibleImages.map((image, index) => (
             <motion.div
-              layout
               key={image.id}
               className="masonry-item"
               initial={{ opacity: 0, y: 28 }}
@@ -68,7 +67,7 @@ export default function MasonryGallery({ images }: MasonryGalleryProps) {
             </motion.div>
           ))}
         </AnimatePresence>
-      </motion.div>
+      </div>
 
       <div ref={sentinelRef} className="h-12" aria-hidden="true" />
 

@@ -29,7 +29,7 @@ export default function PortfolioLightbox({
     <Lightbox
       open={open}
       close={onClose}
-      index={index}
+      index={currentIndex}
       slides={images.map((image) => ({
         src: image.src,
         alt: image.alt,

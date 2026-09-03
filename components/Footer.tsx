@@ -3,7 +3,7 @@ import { Instagram, Mail, MessageCircle } from "lucide-react";
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://instagram.com/",
+    href: "https://www.instagram.com/wedsbyartsy/",
     icon: Instagram,
   },
   {
@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     label: "Email",
-    href: "mailto:hello@wedsbyartsy.com",
+    href: "mailto:theartsys8@gmail.com",
     icon: Mail,
   },
 ];

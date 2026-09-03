@@ -1,5 +1,5 @@
 export type GalleryImage = {
-  id: number;
+  id: number | string;
   src: string;
   alt: string;
   width: number;
